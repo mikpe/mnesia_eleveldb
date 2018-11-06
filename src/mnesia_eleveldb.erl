@@ -1007,7 +1007,7 @@ default_open_opts() ->
       , {cache_size,
          list_to_integer(get_env_default("LEVELDB_CACHE_SIZE", "32212254"))}
       , {block_size, 1024}
-      , {max_open_files, 100}
+      , {max_open_files, 500}
       , {write_buffer_size,
          list_to_integer(get_env_default(
                            "LEVELDB_WRITE_BUFFER_SIZE", "4194304"))}
